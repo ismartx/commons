@@ -3,6 +3,7 @@ package org.smartx.commons.utils;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 
 import java.io.UnsupportedEncodingException;
@@ -17,6 +18,10 @@ import java.net.URLEncoder;
 public final class CodeUtils {
 
     private static String DEFAULT_ENCODING = "UTF-8";
+
+    public static final String md5(String data) {
+        return DigestUtils.md5Hex(data);
+    }
 
     /**
      * Hex编码.
