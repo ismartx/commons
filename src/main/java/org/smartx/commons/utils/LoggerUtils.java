@@ -10,6 +10,9 @@ import org.slf4j.helpers.MessageFormatter;
  */
 public final class LoggerUtils {
 
+    private LoggerUtils() {
+    }
+
     public static String getErrorMsg(String format, Object[] argArray) {
         FormattingTuple ft = MessageFormatter.arrayFormat(format, argArray);
         return ft.getMessage();

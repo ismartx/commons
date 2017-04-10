@@ -9,6 +9,9 @@ import org.apache.commons.lang3.RandomStringUtils;
  */
 public final class RandomUtils {
 
+    private RandomUtils() {
+    }
+
     // exclude 0,1,o,l
     private static final char[] LOWCASE_LETTERS_AND_NUMBERS =
             new char[]{'2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g',

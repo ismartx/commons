@@ -32,6 +32,9 @@ public final class DateUtils {
 
     public static final String DATE_PATTERN_yyyyMMddHHmmss = "yyyyMMddHHmmss";
 
+    private DateUtils() {
+    }
+
     /**
      * format date by given pattern
      */

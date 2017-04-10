@@ -14,6 +14,9 @@ import java.util.Map;
  */
 public final class JsonUtils {
 
+    private JsonUtils() {
+    }
+
     /**
      * object to json，默认关闭循环引用，不然无法解析同一个list中的同一个引用对象
      */

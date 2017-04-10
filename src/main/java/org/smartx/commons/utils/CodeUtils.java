@@ -19,6 +19,9 @@ public final class CodeUtils {
 
     private static String DEFAULT_ENCODING = "UTF-8";
 
+    private CodeUtils() {
+    }
+
     public static final String md5(String data) {
         return DigestUtils.md5Hex(data);
     }
