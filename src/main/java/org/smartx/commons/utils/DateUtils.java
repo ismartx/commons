@@ -123,7 +123,7 @@ public final class DateUtils {
      */
     public static Date calcTmrByPassingWeekend(Date date) {
         LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-        LocalDate tmrLocalDate = null;
+        LocalDate tmrLocalDate;
         switch (localDate.getDayOfWeek().getValue()) {
             case 5:
                 tmrLocalDate = localDate.plusDays(3);
